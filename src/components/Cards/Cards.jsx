@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import Card from "../Card/Card";
+// import { FaYoutube, FaTwitter } from "react-icons";
 
-const Cards = () => {
+const Cards = ({ handleClick }) => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
@@ -16,7 +17,7 @@ const Cards = () => {
     <div className=" basis-3/4 grid md:grid-cols-2 lg:grid-cols-3 gap-4 ">
       {/* <h2>This is Cards</h2> */}
       {cards.map((card) => (
-        <Card key={card.id} card={card}></Card>
+        <Card key={card.id} card={card} handleClick={handleClick}></Card>
       ))}
     </div>
   );

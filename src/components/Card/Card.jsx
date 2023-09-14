@@ -1,6 +1,10 @@
-const Card = ({ card }) => {
+// import { FaBookmark } from "react-icons/fa";
+
+import PropTypes from "prop-types";
+
+const Card = ({ card, handleClick }) => {
   const { img, course_title, course_details, price, credit } = card;
-  console.log(card);
+  // console.log(card);
   return (
     <div className="p-4 flex space-y-4 justify-center items-center flex-col bg-white rounded-xl">
       {/* <h2>This is Card</h2> */}
@@ -13,11 +17,18 @@ const Card = ({ card }) => {
         <p>Price : {price}</p>
         <p>Credit : {credit}hr</p>
       </div>
-      <div className="bg-sky-700 w-full text-center py-2 rounded-md text-white font-semibold cursor-pointer ">
+      <div
+        onClick={() => handleClick(card)}
+        className="bg-sky-700 w-full text-center py-2 rounded-md text-white font-semibold cursor-pointer "
+      >
         <button>Select</button>
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  card: PropTypes.object.isRequired,
 };
 
 export default Card;
