@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "img": "https://i.ibb.co/88HNNxj/Rectangle-2.jpg",
     "course_title": "Introduction to C Programming",
     "credit": 3,
@@ -7,6 +8,7 @@
     "course_details": "Learn the fundamentals of C programming, including variables, loops, and functions. Master the art of writing efficient and bug-free code in C."
   },
   {
+    "id": 2,
     "img": "https://i.ibb.co/cTY0tz4/Rectangle-2-1.jpg",
     "course_title": "Introduction to Algorithms",
     "credit": 4,
@@ -14,6 +16,7 @@
     "course_details": "Explore the world of algorithms and problem-solving techniques. Understand how algorithms drive modern computing systems."
   },
   {
+    "id": 3,
     "img": "https://i.ibb.co/c2SJJ7v/Rectangle-2-2.jpg",
     "course_title": "Introduction to C++ for DSA",
     "credit": 3,
@@ -21,6 +24,7 @@
     "course_details": "Get a solid foundation in C++ programming with a focus on Data Structures and Algorithms. Enhance your coding skills."
   },
   {
+    "id": 4,
     "img": "https://i.ibb.co/0MJgHvW/Rectangle-3.jpg",
     "course_title": "Basic Data Structures",
     "credit": 2,
@@ -28,6 +32,7 @@
     "course_details": "Learn essential data structures such as arrays, linked lists, and stacks. Apply them to solve real-world problems efficiently."
   },
   {
+    "id": 5,
     "img": "https://i.ibb.co/dcpGVYT/Rectangle-2-3.jpg",
     "course_title": "Introduction to OOP Python",
     "credit": 3,
@@ -35,6 +40,7 @@
     "course_details": "Discover the principles of Object-Oriented Programming (OOP) in Python. Build reusable and well-structured code."
   },
   {
+    "id": 6,
     "img": "https://i.ibb.co/PTmMYFY/Rectangle-2-4.jpg",
     "course_title": "Software Engineering",
     "credit": 5,
@@ -42,6 +48,7 @@
     "course_details": "Dive into the world of software engineering methodologies and best practices. Learn to design, develop, and maintain robust software."
   },
   {
+    "id": 7,
     "img": "https://i.ibb.co/rpdzNrq/Rectangle-3-1.jpg",
     "course_title": "AWS",
     "credit": 4,
@@ -49,6 +56,7 @@
     "course_details": "Become proficient in Amazon Web Services (AWS) and cloud computing. Deploy and manage scalable applications in the cloud."
   },
   {
+    "id": 8,
     "img": "https://i.ibb.co/mhbXMd0/Rectangle-2-5.jpg",
     "course_title": "Cloud Computing",
     "credit": 4,
@@ -56,6 +64,7 @@
     "course_details": "Explore the foundations of cloud computing, including virtualization, storage, and networking. Harness the power of cloud resources."
   },
   {
+    "id": 9,
     "img": "https://i.ibb.co/hCybw8B/Rectangle-2-6.jpg",
     "course_title": "Database (MySQL)",
     "credit": 2,
