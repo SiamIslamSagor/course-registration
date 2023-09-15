@@ -8,7 +8,7 @@ const Card = ({ card, handleClick }) => {
   const { img, course_title, course_details, price, credit } = card;
   return (
     <div className="p-4 flex space-y-4 justify-center items-center flex-col bg-white rounded-xl lg:h-[]">
-      <img className="w-full" src={img} alt="" />
+      <img className="w-full" src={img} alt={course_title} />
       <h2 className="text-xl w-full md:text-left font-semibold">
         {course_title}
       </h2>
