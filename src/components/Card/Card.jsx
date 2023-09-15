@@ -1,4 +1,6 @@
 // import { FaBookmark } from "react-icons/fa";
+import { GoBook } from "react-icons/go";
+import { LuDollarSign } from "react-icons/lu";
 
 import PropTypes from "prop-types";
 
@@ -12,8 +14,18 @@ const Card = ({ card, handleClick }) => {
       </h2>
       <p className="text-gray-500">{course_details}</p>
       <div className="w-full flex justify-between text-gray-500">
-        <p>Price : {price}</p>
-        <p>Credit : {credit}hr</p>
+        <div className="flex items-center gap-3">
+          <span>
+            <LuDollarSign></LuDollarSign>
+          </span>
+          <p>Price : {price}</p>
+        </div>
+        <div className="flex items-center gap-3">
+          <span>
+            <GoBook />
+          </span>
+          <p>Credit : {credit}hr</p>
+        </div>
       </div>
       <div
         onClick={() => handleClick(card)}

@@ -11,6 +11,7 @@ function App() {
   const [courses, setCourses] = useState([]);
   const [totalCredit, setTotalCredit] = useState(0);
   const [creditRemaining, setCreditRemaining] = useState(20);
+  const [totalPrice, setTotalPrice] = useState(0);
 
   const handleClick = (course) => {
     const courseExist = courses.find((item) => course.id === item.id);
@@ -19,13 +20,16 @@ function App() {
     }
     const sumCredit = totalCredit + course.credit;
     const remainingCredit = creditRemaining - course.credit;
+    const newCourses = [...courses, course];
+    const totalSum = totalPrice + course.price;
+    const sumTotal = totalSum.toFixed(2) * 1;
     if (remainingCredit < 0) {
       return toast("You don't have credit for selecting more courses");
     } else {
-      const newCourses = [...courses, course];
       setCourses(newCourses);
       setCreditRemaining(remainingCredit);
       setTotalCredit(sumCredit);
+      setTotalPrice(sumTotal);
     }
   };
 
@@ -36,6 +40,7 @@ function App() {
         <div className="flex flex-col md:flex-row gap-6">
           <Cards handleClick={handleClick}></Cards>
           <Cart
+            totalPrice={totalPrice}
             creditRemaining={creditRemaining}
             totalCredit={totalCredit}
             courses={courses}
