@@ -9,7 +9,9 @@ function App() {
   const [courses, setCourses] = useState([]);
 
   const handleClick = (course) => {
-    console.log(course);
+    const newCourses = [...courses, course];
+    setCourses(newCourses);
+    // console.log(newCourses);
   };
 
   return (
@@ -17,9 +19,9 @@ function App() {
       <div className="container mx-auto">
         <Header></Header>
         {/* <div className="md:flex"> */}
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row gap-6">
           <Cards handleClick={handleClick}></Cards>
-          <Cart></Cart>
+          <Cart courses={courses}></Cart>
         </div>
       </div>
     </>
