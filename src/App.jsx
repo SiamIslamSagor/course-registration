@@ -4,30 +4,28 @@ import "./App.css";
 import Cards from "./components/Cards/Cards";
 import Cart from "./components/Cart/Cart";
 import Header from "./components/Header/Header";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [courses, setCourses] = useState([]);
   const [totalCredit, setTotalCredit] = useState(0);
   const [creditRemaining, setCreditRemaining] = useState(20);
 
-  const creditHandler = (course) => {
+  const handleClick = (course) => {
+    const courseExist = courses.find((item) => course.id === item.id);
+    if (courseExist) {
+      return toast("You have already selected this course ");
+    }
     const sumCredit = totalCredit + course.credit;
     const remainingCredit = creditRemaining - course.credit;
     if (remainingCredit < 0) {
-      return alert("credit finished");
-    }
-    setCreditRemaining(remainingCredit);
-    setTotalCredit(sumCredit);
-  };
-
-  const handleClick = (course) => {
-    const courseExist = courses.find((item) => course.id == item.id);
-    if (courseExist) {
-      return alert("you have alredy selected this course ");
+      return toast("You don't have credit for selecting more courses");
     } else {
       const newCourses = [...courses, course];
       setCourses(newCourses);
-      creditHandler(course);
+      setCreditRemaining(remainingCredit);
+      setTotalCredit(sumCredit);
     }
   };
 
@@ -43,6 +41,7 @@ function App() {
             courses={courses}
           ></Cart>
         </div>
+        <ToastContainer />
       </div>
     </>
   );
