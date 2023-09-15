@@ -5,7 +5,7 @@
     "course_title": "Introduction to C Programming",
     "credit": 3,
     "price": 1299.99,
-    "course_details": "Learn the fundamentals of C programming, including variables, loops, and functions. Master the art of writing efficient and bug-free code in C."
+    "course_details": "Learn the C programming, including variables, loops, and functions. Master the art of writing efficient and bug-free code in C."
   },
   {
     "id": 2,
@@ -61,7 +61,7 @@
     "course_title": "Cloud Computing",
     "credit": 4,
     "price": 2399.99,
-    "course_details": "Explore the foundations of cloud computing, including virtualization, storage, and networking. Harness the power of cloud resources."
+    "course_details": "Explore the foundations of cloud computing, including virtualization, storage. Harness the power of cloud resources."
   },
   {
     "id": 9,

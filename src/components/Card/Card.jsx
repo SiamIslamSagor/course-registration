@@ -4,10 +4,8 @@ import PropTypes from "prop-types";
 
 const Card = ({ card, handleClick }) => {
   const { img, course_title, course_details, price, credit } = card;
-  // console.log(card);
   return (
-    <div className="p-4 flex space-y-4 justify-center items-center flex-col bg-white rounded-xl">
-      {/* <h2>This is Card</h2> */}
+    <div className="p-4 flex space-y-4 justify-center items-center flex-col bg-white rounded-xl lg:h-[]">
       <img className="w-full" src={img} alt="" />
       <h2 className="text-xl w-full md:text-left font-semibold">
         {course_title}
