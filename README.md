@@ -1,8 +1,7 @@
 # Course Registration
 
-This is a course selling website, created by me. All the requirements in our assignment have been fulfilled. Since I'm a beginner, and projecting with fast time react, I had to think a lot to meet the requirements. I broke down each requirement into small steps.
-Then I started converting my thoughts into programming one by one. I have encountered many errors while coding, when an error occurs I notice the error well and identify where the error is coming from. After finding out where the error is coming from I fix the error. Since this was my first React project
-, so I was a bit nervous about it. But I was confident that I could do it. Then when I start coding, I go through each step one by one. Finally my assignment seven project is complete.
+To change the state of something in React, you need to do it through state. My website has five states which are variable so I have to declare five states. The only event a user can organize on this website is a click. On this website, I first declare a state named Courses and Set Courses, whose function is to store the fetched data in an array named courses. Then I map that array and send it to the component named card, the component creates cards one by one with the data.The second state I used is when the user clicks on a certain button, that course will be set on the card. The third and fourth states were for setting the remaining credit and total credits on the card, and optionally a state for setting the total price, whose function was to display the prices of each selected course on the total price card. As the first state is for data load, it is loaded once by default.
+Then before setting the rest of the states, I set the remaining four states after checking all the validations that were asked to be done. As a result, if there is any validation problem, nothing will change on the card. This is how I managed the states of this project. thank you.
 
 ## Features
 
